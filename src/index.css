@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --fontSize:16px
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+small .errMsg{
+    color:red;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+    
+}
+
+.formStyle:hover{
+    box-shadow: 5px 5px 15px 8px rgb(27, 19, 19);
+    -moz-box-shadow: 5px 5px 15px 8px rgb(27, 19, 19);
+    -webkit-box-shadow: 5px 5px 15px 8px rgb(27, 19, 19);
+    font-size: var(--fontSize);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(252, 245, 245);
+    mix-blend-mode: hue;
+    background-attachment: fixed;
+
+}
+
+.formStyle{
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid rgb(27, 19, 19);
+    box-sizing: border-box;
+    min-height: 400px;
+    max-height: 600px;
+    width: 300px;
+    min-width: 372px;
+    max-width: 768px;
+    
+}
+.inputField{
+    box-sizing: border-box;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+input, textarea, button{
+    width: 220px;
+    height: 30px;
+    border: 1px solid rgb(27, 19, 19);
+    border-radius: 4px;
+
+}
+
+label{
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 5px;
+    color: rgb(7, 5, 5);
+    font-weight: 500;
+    letter-spacing: 1px;
 }
