@@ -50,11 +50,40 @@ input, textarea, button{
     border-radius: 4px;
 
 }
-
+p{
+    width:600px;
+    text-indent: 70px;
+}
+p::first-letter{
+    color: lightcoral;
+    font-size: 30px;
+    font-weight: 600;
+}
+p::selection{
+    background-color: lightcoral;
+    color: black;
+    font-size: 20px;
+}
 label{
     font-family: 'Assistant', sans-serif;
     margin-bottom: 5px;
     color: rgb(7, 5, 5);
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+input:focus , textarea:focus{
+  background-color: rgb(231, 231, 175);
+}
+
+h2{
+    display: block;
+    margin-left: 41%;
+font-size: 2rem;
+}
+h2:hover::after{
+    content:attr(data-caption);
+    color: rgb(214, 130, 144);
+ transition: all 0.4s ease-in;
+
 }
